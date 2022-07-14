@@ -1,0 +1,95 @@
+﻿
+/* 5限
+tr:nth-child(5){
+    display: none
+}*/
+
+
+/* 二部 */
+tr:nth-child(6){
+    display: none
+}tr:nth-child(7){
+    display: none
+}
+
+tr:nth-child(8){
+    display: none
+}tr:nth-child(9){
+    display: none
+}
+
+/*sat
+tr th:nth-child(7){
+    display: none
+}
+tr:nth-child(1) td:nth-child(7){
+    display: none;
+}tr:nth-child(2) td:nth-child(7){
+    display: none;
+}tr:nth-child(3) td:nth-child(7){
+    display: none;
+}tr:nth-child(4) td:nth-child(7){
+    display: none;
+}tr:nth-child(5) td:nth-child(7){
+    display: none;
+}*/
+
+/*sun*/
+tr th:nth-child(8){
+    display: none
+}
+tr:nth-child(1) td:nth-child(8){
+    display: none;
+}tr:nth-child(2) td:nth-child(8){
+    display: none;
+}tr:nth-child(3) td:nth-child(8){
+    display: none;
+}tr:nth-child(4) td:nth-child(8){
+    display: none;
+}tr:nth-child(5) td:nth-child(8){
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+.course-webclass {
+    font-size: 0;
+}.course-webclass:before{
+    font-size: 18px;
+    content:"WebClass";
+}*/
+
+/*電子ポートフォリオ*/
+.side-block-outer.hidden-xs .side-block {
+    display: none
+}
+
+/*リンク*/
+.hidden-xs .side-block {
+    display: none    
+}
+/*管理者*/
+#UserTopInfo {
+    display: none
+}
+
+/*.btn {
+    display: none
+}
+/*学期選択*/
+/*.form-inline .form-control {
+    display: none
+}*/
+
+/*表示する学期　時間割　その他のコース*/
+.form-inline > h4 {
+    display: none
+}
