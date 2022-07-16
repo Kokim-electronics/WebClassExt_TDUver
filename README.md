@@ -13,7 +13,7 @@
 
 1. [WebClass-Extension](https://github.com/BearOffice/WebClass-Extension) から`WebClass-Extension.zip`をDL
 2. [WebClassExt_V3patch](https://github.com/Kokim-electronics/WebClassExt_V3patch)を`Releases - Assets - Source code (zip)` もしくは `Code - Download ZIP`からDL
-3. 解凍しWebClass-ExtensionにWebClassExt_V3_patch-vx.x.xの中身をぶち込む（置き換え）
+3. WebClass-Extensionを`C:\Program Files\Google\Chrome`あたりにでも解凍しWebClass-ExtensionフォルダににWebClassExt_V3_patch-vx.x.xの中身をぶち込む（置き換え）
 4. `chrome://extensions/`へアクセス
 
 5. デベロッパーモードオン
