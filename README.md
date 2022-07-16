@@ -11,8 +11,8 @@
 
 参考 : <br>[カスタムの Chrome アプリと拡張機能を作成して公開する - Chrome Enterprise and Education ヘルプ](https://support.google.com/chrome/a/answer/2714278?hl=ja)
 
-1. [WebClass-Extension](https://github.com/BearOffice/WebClass-Extension) から`WebClass-Extension.zip`をDL
-2. [WebClassExt_V3patch](https://github.com/Kokim-electronics/WebClassExt_V3patch)を`Releases - Assets - Source code (zip)` もしくは `Code - Download ZIP`からDL
+1. [WebClass-Extension](https://github.com/BearOffice/WebClass-Extension/releases) から`WebClass-Extension.zip`をDL
+2. [WebClassExt_V3patch](https://github.com/Kokim-electronics/WebClassExt_V3patch/releases)を`Releases - Assets - WebClassExt_V3patch-vx.x.x.zip`からDL
 3. WebClass-Extensionを`C:\Program Files\Google\Chrome`あたりにでも解凍しWebClass-ExtensionフォルダににWebClassExt_V3_patch-vx.x.xの中身をぶち込む（置き換え）
 4. `chrome://extensions/`へアクセス
 
@@ -26,4 +26,4 @@
 - ブラウザ右上のパズルピースアイコンから本拡張機能をピン止めするとアクセスが楽に。
 - サポートは[#WebClassExt_V3patch](https://twitter.com/search?q=%23WebClassExt_V3patch)にて
 
-更新日:2022/07/16 14:43
+更新日:2022/07/16 15:07
