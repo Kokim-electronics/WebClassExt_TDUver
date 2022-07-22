@@ -1,4 +1,4 @@
-## WebClassExt_V3patch
+## WebClassExt_V3patch-v1.1.1
 
 ### Ⅰ.機能
 1. https://github.com/BearOffice/WebClass-Extension のmanifestV3化
@@ -30,4 +30,4 @@ BearOffice/WebClass-Extension: ウェブクラス(WebClass)の利便性を向上
 ### Ⅴ.他大生向け
 manifest.jsonやbackground.jsあたりのURL変えると他の大学でも使えるかも？
 
-最終更新日:2022/07/22 11:15
+最終更新日:2022/07/22 21:30

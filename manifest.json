@@ -1,15 +1,9 @@
 {
-    "manifest_version": 3,
     "name": "WebClass Extension V3",
-    "description": "An extension for WebClass",
+    "description": "An extension for WebClass : manifestV3 patch",
+    "version": "1.1.1",
+    "manifest_version": 3,
     "homepage_url": "https://github.com/Kokim-electronics/WebClassExt_V3patch",
-    "version": "1.1.0",
-    "icons": {
-        "128": "img/wclogo.png"
-    },
-    "action": {
-        "default_title": "Open WebClass"
-    },
     "permissions": [
         "storage",
         "tabs",
@@ -22,8 +16,14 @@
     "options_ui": {
         "page": "options.html"
     },
+    "icons": {
+        "128": "img/wclogo.png"
+    },
     "background": {
         "service_worker": "background.js"
+    },
+    "action": {
+        "default_title": "Open WebClass"
     },
     "content_scripts": [
         {
