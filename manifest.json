@@ -11,7 +11,7 @@
         "downloads"
     ],
     "host_permissions": [
-        "https://*/webclass/login.php"
+        "https://els.sa.dendai.ac.jp/webclass/:"
     ],
     "options_ui": {
         "page": "options.html"
@@ -37,7 +37,7 @@
         },
         {
             "matches": [
-                "https://*/webclass/",
+                "https://*/webclass/*",
                 "https://*/webclass/?acs_=*",
                 "https://*/webclass/index.php*"
             ],
@@ -81,7 +81,8 @@
             ],
             "js": [
                 "js/timetrigger.js",
-                "js/reportalert.js"
+                "js/reportalert.js",
+                "js/course.js"
             ]
         },
         {
@@ -90,14 +91,6 @@
             ],
             "js": [
                 "js/reportsearcher.js"
-            ]
-        },
-        {
-            "matches": [
-                "https://*/webclass/course.php/*"
-            ],
-            "js": [
-                "js/course.js"
             ]
         },
         {
