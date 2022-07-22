@@ -1,5 +1,7 @@
 ## WebClassExt_V3patch-v1.1.1
 
+東京電機大学向けです。他大学に関してはⅤ.他大学向けをご覧ください。
+
 ### Ⅰ.機能
 1. https://github.com/BearOffice/WebClass-Extension のmanifestV3化
 2. 自動ログイン
