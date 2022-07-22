@@ -13,12 +13,10 @@
 
 1. [WebClass-Extension](https://github.com/BearOffice/WebClass-Extension/releases) から`WebClass-Extension.zip`をDL
 2. [WebClassExt_V3patch](https://github.com/Kokim-electronics/WebClassExt_V3patch/releases)を`Releases - Assets - WebClassExt_V3patch-vx.x.x.zip`からDL
-3. WebClass-Extensionを`C:\Program Files\Google\Chrome`あたりにでも解凍しWebClass-ExtensionフォルダににWebClassExt_V3_patch-vx.x.xの中身をぶち込む（置き換え）
-4. `chrome://extensions/`へアクセス
+3. WebClass-Extensionを`C:\Users\hoge\Documents\Github`あたりにでも解凍し`WebClass-Extension`フォルダに`WebClassExt_V3_patch-vx.x.x`の中身をぶち込む（置き換え）
+4. `chrome://extensions/` or `edge://extensions/`へアクセス、デベロッパーモード(Chrome)・開発者モード(Edge)、オン
 
-5. デベロッパーモードオン
-
-6. `WebClass-Extension`フォルダをD&D
+6. `WebClass-Extension`フォルダ(manifest.jsonが入っているフォルダ以外はエラーを吐きます)をD&D
 
 7. 設定画面にて学籍番号と共通パスワードを設定
 
@@ -26,4 +24,10 @@
 - ブラウザ右上のパズルピースアイコンから本拡張機能をピン止めするとアクセスが楽に。
 - サポートは[#WebClassExt_V3patch](https://twitter.com/search?q=%23WebClassExt_V3patch)にて
 
-更新日:2022/07/16 15:07
+### Ⅳ.参考資料
+BearOffice/WebClass-Extension: ウェブクラス(WebClass)の利便性を向上できるChrome拡張機能． https://github.com/BearOffice/WebClass-Extension 
+
+### Ⅴ.他大生向け
+manifest.jsonやbackground.jsあたりのURL変えると他の大学でも使えるかも？
+
+最終更新日:2022/07/22 11:15

@@ -3,7 +3,7 @@
     "name": "WebClass Extension V3",
     "description": "An extension for WebClass",
     "homepage_url": "https://github.com/Kokim-electronics/WebClassExt_V3patch",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "icons": {
         "128": "img/wclogo.png"
     },
