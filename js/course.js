@@ -144,12 +144,12 @@ window.onload = function () {
             if (huga[i].href.startsWith("https://els.sa.dendai.ac.jp/webclass/download.php/")) {
             // pop = huga[i].href
             huga[i].addEventListener("click", function () {
-                window.open(this.href, "_blank");
-                this.href = "#";
-                window.location = "#"
+                //window.open(huga[i].href, "_blank");
+                //this.href = "#";
+                //window.location = "#"
             })
             // huga[i].removeAttribute("href");//href = "#"
-            huga[i].tabIndex = -1;
+            //huga[i].tabIndex = -1;
             // huga[i].className = "disabled";
             huga[i].removeAttribute("download");
         }
