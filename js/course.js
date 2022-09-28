@@ -81,8 +81,8 @@ function judge() {
 }
 
 // 初期実行===========================================
-var tf = true;
-collapse();
+var tf = false;
+// expand();
 hoge = document.querySelectorAll(".tab-content")
 // 初期実行===========================================
 
@@ -110,7 +110,7 @@ div.appendChild(h3);
 
 input = document.createElement('input');
 input.type = "checkbox";
-input.checked = true;
+input.checked = false;
 input.id = "cb_toggle_switch";
 input.onclick = judge;
 div.appendChild(input);
@@ -120,3 +120,39 @@ label.htmlFor = "cb_toggle_switch";
 div.appendChild(label);
 //========================
 hoge[0].before(div);
+
+/*
+window.addEventListener('load', (event)=> {
+    var huga = document.querySelectorAll("a");
+    console.log(huga);
+    for (var i = 0; i < huga.length; i++) {
+        if (huga[i].href.startsWith("https://els.sa.dendai.ac.jp/webclass/download.php/")) {
+            pop = huga[i].href
+            huga[i].addEventListener("click", function () {
+                window.open(pop, "_blank");
+            })
+            huga[i].removeAttribute("href");
+        }
+    }
+
+});*/
+
+window.onload = function () {
+    var huga = document.links;
+    setTimeout(function () {
+        for (var i = 0; i < huga.length; i++) {
+            if (huga[i].href.startsWith("https://els.sa.dendai.ac.jp/webclass/download.php/")) {
+            // pop = huga[i].href
+            huga[i].addEventListener("click", function () {
+                window.open(this.href, "_blank");
+                this.href = "#";
+                window.location = "#"
+            })
+            // huga[i].removeAttribute("href");//href = "#"
+            huga[i].tabIndex = -1;
+            // huga[i].className = "disabled";
+            huga[i].removeAttribute("download");
+        }
+        }
+    }, 250);
+};

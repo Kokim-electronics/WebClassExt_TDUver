@@ -1,4 +1,4 @@
-## WebClassExt_V3patch-v2.1.0
+## WebClassExt_V3patch-v3.0.0
 
 東京電機大学向けです。他大学に関してはⅤ.他大学向けをご覧ください。
 
@@ -8,7 +8,7 @@
    - 毎度毎度の「ログイン」ボタン押下が無くなる
 3. ホーム画面のスタイル変更
 4. 各科目ページのタブ開閉
-5. (v2.01.0での変更点 -折りたたみ可能に)
+5. (v2.1.0からの変更点 - タイムライン、添付資料PDFをブラウザ閲覧が可能に)
 
 ### Ⅱ.導入
 
@@ -17,7 +17,7 @@
 1. [WebClass-Extension](https://github.com/BearOffice/WebClass-Extension/releases) から`WebClass-Extension.zip`をDL
 2. [WebClassExt_V3patch](https://github.com/Kokim-electronics/WebClassExt_V3patch/releases)を`Releases - Assets - WebClassExt_V3patch-vx.x.x.zip`からDL
 3. WebClass-Extensionを`C:\Users\hoge\Documents\Github`あたりにでも解凍し`WebClass-Extension`フォルダに`WebClassExt_V3_patch-vx.x.x`の中身をぶち込む（置き換え）
-4. `chrome://extensions/` or `edge://extensions/`へアクセス、デベロッパーモード(Chrome)・開発者モード(Edge)、オン
+4. `chrome://extensions/`へアクセス、デベロッパーモード(Chrome)オン
 
 6. `WebClass-Extension`フォルダ(manifest.jsonが入っているフォルダ以外はエラーを吐きます)をD&D
 
@@ -29,8 +29,9 @@
 
 ### Ⅳ.参考資料
 BearOffice/WebClass-Extension: ウェブクラス(WebClass)の利便性を向上できるChrome拡張機能． https://github.com/BearOffice/WebClass-Extension 
+a01sa01to/WebClass-PreventDL:埼玉大学生向けChrome拡張機能． https://github.com/a01sa01to/WebClass-PreventDL
 
 ### Ⅴ.他大生向け
 manifest.jsonやbackground.jsあたりのURL変えると他の大学でも使えるかも？
 
-最終更新日:2022/09/15 21:00
+最終更新日:2022/09/29 0:00

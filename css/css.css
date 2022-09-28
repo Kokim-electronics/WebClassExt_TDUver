@@ -68,6 +68,8 @@ tr:nth-child(1) td:nth-child(8){
     display: none
 }
 
+/*コメントアウト*/
+
 .toggle_switch {
     display: table;
     font-size: 25px;
@@ -103,4 +105,8 @@ tr:nth-child(1) td:nth-child(8){
 }
 .toggle_switch > input:checked + label::before {
     left: calc(100% - 1em + 0.05em);
+}
+
+a.disabled{
+    pointer-events: none;
 }
