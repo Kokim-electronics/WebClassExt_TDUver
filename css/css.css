@@ -107,6 +107,6 @@ tr:nth-child(1) td:nth-child(8){
     left: calc(100% - 1em + 0.05em);
 }
 
-a.disabled{
+a.disabled2{
     pointer-events: none;
 }

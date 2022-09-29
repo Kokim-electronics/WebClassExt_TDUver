@@ -1,4 +1,4 @@
-## WebClassExt_V3patch-v3.0.0
+## WebClassExt_V3patch-v3.1.0
 
 東京電機大学向けです。他大学に関してはⅤ.他大学向けをご覧ください。
 
@@ -34,4 +34,4 @@ a01sa01to/WebClass-PreventDL:埼玉大学生向けChrome拡張機能． https://
 ### Ⅴ.他大生向け
 manifest.jsonやbackground.jsあたりのURL変えると他の大学でも使えるかも？
 
-最終更新日:2022/09/29 0:00
+最終更新日:2022/09/29 13:00

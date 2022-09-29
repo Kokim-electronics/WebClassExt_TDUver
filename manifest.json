@@ -1,7 +1,7 @@
 {
     "name": "TDU WebClass Ext V3",
     "description": "An extension for WebClass : manifestV3 patch",
-    "version": "3.0.0",
+    "version": "3.1.0",
     "manifest_version": 3,
     "homepage_url": "https://github.com/Kokim-electronics/WebClassExt_V3patch",
     "permissions": [

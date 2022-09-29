@@ -150,7 +150,7 @@ window.onload = function () {
             })
             // huga[i].removeAttribute("href");//href = "#"
             //huga[i].tabIndex = -1;
-            // huga[i].className = "disabled";
+            // huga[i].className = "disabled2";
             huga[i].removeAttribute("download");
         }
         }
