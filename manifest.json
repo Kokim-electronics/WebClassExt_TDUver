@@ -16,8 +16,7 @@
         "https://els.sa.dendai.ac.jp/webclass/*"
     ],
     "options_ui": {
-        "page": "options.html",
-        "chrome_style": true
+        "page": "options.html"
     },
     "icons": {
         "128": "img/wclogo.png"
