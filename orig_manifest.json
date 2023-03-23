@@ -1,0 +1,64 @@
+{
+    "manifest_version": 3,
+    "name": "WebClass Extension",
+    "description": "An extension for WebClass",
+    "homepage_url": "https://github.com/MisakiBear/WebClass-Extension",
+    "version": "0.5.5",
+    "icons": {
+        "128": "img/icon.png"
+    },
+    "action": {
+        "default_title": "Open WebClass"
+    },
+    "permissions": [
+        "storage",
+        "downloads",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://*/webclass/login.php/*"
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "browser_style": true
+    },
+    "background": {
+        "service_worker": "js/background.js",
+        "type": "module"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*/webclass/*"],
+            "js": ["js/jquery-3.6.3.min.js"],
+            "run_at": "document_start"
+        },
+        {
+            "matches": ["https://*/webclass/", 
+                "https://*/webclass/?acs_=*", 
+                "https://*/webclass/index.php*"
+            ],
+            "js": ["js/mainpage.js"]
+        },
+        {
+            "matches": ["https://*/webclass/txtbk_frame.php*"],
+            "js": ["js/contentsdownload.js"]
+        },
+        {
+            "matches": ["https://*/webclass/file_down.php*"],
+            "js": ["js/autodownload.js"]
+        },
+        {
+            "matches": ["https://*/webclass/informations.php*"],
+            "exclude_matches": ["https://*/webclass/informations.php*action=show*"],
+            "js": ["js/autoreadinfo.js"]
+        },
+        {
+            "matches": ["https://*/webclass/course.php*"],
+            "js": ["js/timetrigger.js", "js/reportalert.js"]
+        },
+        {
+            "matches": ["https://*/webclass/qstn_frame.php*"],
+            "js": ["js/reportsearcher.js"]
+        }
+    ]
+}

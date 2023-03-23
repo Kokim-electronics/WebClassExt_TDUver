@@ -1,9 +1,9 @@
 {
     "name": "TDU WebClass Ext V3",
-    "description": "An extension for WebClass : manifestV3 patch",
-    "version": "3.1.0",
+    "description": "An extension for TDU WebClass",
+    "version": "4.0.0",
     "manifest_version": 3,
-    "homepage_url": "https://github.com/Kokim-electronics/WebClassExt_V3patch",
+    "homepage_url": "https://github.com/Kokim-electronics/WebClassExt_TDUver",
     "permissions": [
         "storage",
         "tabs",
@@ -16,7 +16,8 @@
         "https://els.sa.dendai.ac.jp/webclass/*"
     ],
     "options_ui": {
-        "page": "options.html"
+        "page": "options.html",
+        "chrome_style": true
     },
     "icons": {
         "128": "img/wclogo.png"
@@ -29,12 +30,8 @@
     },
     "content_scripts": [
         {
-            "matches": [
-                "https://els.sa.dendai.ac.jp/webclass/*"
-            ],
-            "js": [
-                "js/jquery-3.5.1.min.js"
-            ],
+            "matches": ["https://els.sa.dendai.ac.jp/webclass/*"],
+            "js": ["js/jquery-3.5.1.min.js"],
             "run_at": "document_start"
         },
         {
@@ -43,70 +40,40 @@
                 "https://els.sa.dendai.ac.jp/webclass/?acs_=*",
                 "https://els.sa.dendai.ac.jp/webclass/index.php*"
             ],
-            "exclude_matches": [
-                "https://els.sa.dendai.ac.jp/webclass/msg_viewer.php*"
-            ],
-            "js": [
-                "js/mainpage.js"
-            ],
-            "css": [
-                "css/css.css"
-            ]
+            "exclude_matches": ["https://els.sa.dendai.ac.jp/webclass/msg_viewer.php*"],
+            "js": ["js/mainpage.js"],
+            "css": ["css/css.css"]
         },
         {
-            "matches": [
-                "https://els.sa.dendai.ac.jp/webclass/txtbk_frame.php*"
-            ],
-            "js": [
-                "js/contentsdownload.js"
-            ]
+            "matches": ["https://els.sa.dendai.ac.jp/webclass/txtbk_frame.php*"],
+            "js": ["js/contentsdownload.js"]
         },
         {
-            "matches": [
-                "https://els.sa.dendai.ac.jp/webclass/file_down.php*"
-            ],
-            "js": [
-                "js/autodownload.js"
-            ]
+            "matches": ["https://els.sa.dendai.ac.jp/webclass/file_down.php*"],
+            "js": ["js/autodownload.js"]
         },
         {
-            "matches": [
-                "https://els.sa.dendai.ac.jp/webclass/informations.php*"
-            ],
-            "exclude_matches": [
-                "https://els.sa.dendai.ac.jp/webclass/informations.php*action=show*"
-            ],
-            "js": [
-                "js/autoreadinfo.js"
-            ]
+            "matches": ["https://els.sa.dendai.ac.jp/webclass/informations.php*"],
+            "exclude_matches": ["https://els.sa.dendai.ac.jp/webclass/informations.php*action=show*"],
+            "js": ["js/autoreadinfo.js"]
         },
         {
-            "matches": [
-                "https://els.sa.dendai.ac.jp/webclass/course.php*"
-            ],
+            "matches": ["https://els.sa.dendai.ac.jp/webclass/course.php*"],
             "js": [
                 "js/timetrigger.js",
                 "js/reportalert.js",
                 "js/course.js"
             ],
-            "css": [
-                "css/css.css"
-            ]
+            "css": ["css/css.css"]
         },
         {
-            "matches": [
-                "https://els.sa.dendai.ac.jp/webclass/qstn_frame.php*"
-            ],
-            "js": [
-                "js/reportsearcher.js"
-            ]
+            "matches": ["https://els.sa.dendai.ac.jp/webclass/qstn_frame.php*"],
+            "js": ["js/reportsearcher.js"]
         },
         {
-            "matches": [
-                "https://els.sa.dendai.ac.jp/webclass/login.php*"
-            ],
+            "matches": ["https://els.sa.dendai.ac.jp/webclass/login.php*"],
             "js": [
-                "js/jquery-3.5.1.min.js",
+                "js/jquery-3.6.3.min.js",
                 "js/autologin.js"
             ]
         }
