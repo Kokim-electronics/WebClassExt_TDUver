@@ -1,4 +1,4 @@
-## WebClassExt_TDUver_v4.0.0
+## WebClassExt_TDUver-v4.0.0
 
 BearOfficeさんの[Chrome拡張機能](https://github.com/BearOffice/WebClass-Extension)を東京電機大学向けに変更しました。他大学に関してはⅤ.他大学向けをご覧ください。
 
