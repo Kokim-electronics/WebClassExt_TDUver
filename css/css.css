@@ -59,9 +59,10 @@ tr:nth-child(1) td:nth-child(8){
     display: none
 }
 /*管理者*/
-#UserTopInfo {
+
+/*#UserTopInfo {
     display: none
-}
+}*/
 
 /*表示する学期　時間割　その他のコース*/
 .form-inline > h4 {
