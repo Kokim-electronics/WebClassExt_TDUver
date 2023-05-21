@@ -7,19 +7,36 @@
 </head>
 
 <body>
-    <p><label>WebClassログイン情報:</label></p>
+    <p><label>WebClass パスワード:</label></p>
     <p>
         <!--<input type="text" id="urltext" name="url" size="50"><br>-->
         <input type="text" id="uido_id" name="uido_id" size="7" placeholder="01kc999">
         <input type="password" id="uido_pass" name="uido_pass" size="35" placeholder="共通パスワード"><br>
+        <fieldset>
+            <legend>非表示にする時限を選択:</legend>
 
+            <input type="checkbox" id="5th" name="5th">         <label for="5th">5限</label>
+            <input type="checkbox" id="6th" name="6th" checked> <label for="6th">N6限</label>
+            <input type="checkbox" id="7th" name="7th" checked> <label for="7th">N7限</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>全休の曜日を選択:</legend>
+            <div>
+                <input type="checkbox" id="mon" name="mon">         <label for="mon">月曜</label>
+                <input type="checkbox" id="tue" name="tue">         <label for="tue">火曜</label>
+                <input type="checkbox" id="wed" name="wed">         <label for="wed">水曜</label>
+                <input type="checkbox" id="thu" name="thu">         <label for="thu">木曜</label>
+                <input type="checkbox" id="fri" name="fri">         <label for="fri">金曜</label>
+                <input type="checkbox" id="sat" name="sat" checked> <label for="sat">土曜</label>
+            </div>
+        </fieldset>
+        <br>
         <button id="confirmbtn">確認</button>
         <label id="resultlb"></label>
-        <br><br>
     </p>
-    <p></p>
     <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
     <script type="text/javascript" src="js/options.js"></script>
 </body>
-
 </html>
+

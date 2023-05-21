@@ -19,11 +19,11 @@
         "https://*/webclass/login.php/*"
     ],
     "options_ui": {
-        "page": "options.html",
+        "page": "options_org.html",
         "browser_style": true
     },
     "background": {
-        "service_worker": "js/background.js",
+        "service_worker": "js/background_org.js",
         "type": "module"
     },
     "content_scripts": [
@@ -37,15 +37,15 @@
                 "https://*/webclass/?acs_=*", 
                 "https://*/webclass/index.php*"
             ],
-            "js": ["js/mainpage.js"]
+            "js": ["js/mainpage_org.js"]
         },
         {
             "matches": ["https://*/webclass/txtbk_frame.php*"],
-            "js": ["js/contentsdownload.js"]
+            "js": ["js/contentsdownload_org.js"]
         },
         {
             "matches": ["https://*/webclass/file_down.php*"],
-            "js": ["js/autodownload.js"]
+            "js": ["js/autodownload_org.js"]
         },
         {
             "matches": ["https://*/webclass/informations.php*"],

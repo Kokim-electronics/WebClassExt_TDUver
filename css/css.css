@@ -1,43 +1,14 @@
-﻿/* 5限
-tr:nth-child(5){
-    display: none
-}*/
-
-/* 二部生はコメントアウト */
-/*6,7限*/
-tr:nth-child(6){
-    display: none
-}tr:nth-child(7){
-    display: none
-}
-/*8,9限*/
+﻿/*8,9限*/
 tr:nth-child(8){
     display: none
 }tr:nth-child(9){
     display: none
 }
 
-/*土曜
-tr th:nth-child(7){
-    display: none
-}
-tr:nth-child(1) td:nth-child(7){
-    display: none;
-}tr:nth-child(2) td:nth-child(7){
-    display: none;
-}tr:nth-child(3) td:nth-child(7){
-    display: none;
-}tr:nth-child(4) td:nth-child(7){
-    display: none;
-}tr:nth-child(5) td:nth-child(7){
-    display: none;
-}*/
-
 /*日曜*/
 tr th:nth-child(8){
     display: none
-}
-tr:nth-child(1) td:nth-child(8){
+}tr:nth-child(1) td:nth-child(8){
     display: none;
 }tr:nth-child(2) td:nth-child(8){
     display: none;
@@ -47,10 +18,9 @@ tr:nth-child(1) td:nth-child(8){
     display: none;
 }tr:nth-child(5) td:nth-child(8){
     display: none;
-}
-
-/*電子ポートフォリオ*/
-#View-1 .side-block {
+}tr:nth-child(6) td:nth-child(8){
+    display: none;
+}tr:nth-child(7) td:nth-child(8){
     display: none;
 }
 
@@ -58,30 +28,21 @@ tr:nth-child(1) td:nth-child(8){
 .hidden-xs:nth-of-type(4) {
     display: none
 }
-/*管理者*/
-
-/*#UserTopInfo {
-    display: none
-}*/
 
 /*表示する学期　時間割　その他のコース*/
 .form-inline > h4 {
     display: none
 }
 
-/*コメントアウト*/
+/*トグル*/
 
 .toggle_switch {
     display: table;
     font-size: 25px;
     margin-bottom: 10px;
-}
-
-.toggle_switch > input {
+}.toggle_switch > input {
     display: none;
-}
-
-.toggle_switch > label {
+}.toggle_switch > label {
     display: block;
     position: relative;
     width: 1.8em;
@@ -89,11 +50,9 @@ tr:nth-child(1) td:nth-child(8){
     border-radius: 1em;
     background-color: #2b2a2f;
     cursor: pointer;
-}
-.toggle_switch > input:checked + label {
+}.toggle_switch > input:checked + label {
     background-color: #2dcb45;
-}
-.toggle_switch > label::before {
+}.toggle_switch > label::before {
     position: absolute;
     top: 0.05em;
     left: 0.05em;
@@ -103,11 +62,11 @@ tr:nth-child(1) td:nth-child(8){
     background-color: #fff;
     transition: 0.25s;
     content: "";
-}
-.toggle_switch > input:checked + label::before {
+}.toggle_switch > input:checked + label::before {
     left: calc(100% - 1em + 0.05em);
 }
 
-a.disabled2{
-    pointer-events: none;
-}
+/* ホバー時のスタイル */
+summary:hover {
+  cursor: pointer; /* カーソルを指マークに */
+} 
